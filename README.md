@@ -1,8 +1,11 @@
 ##zen-illusia
 
-when I grow up I want to be a image viewer/comic book reader with both vim and emacs keybindings.
+when I grow up I want to be a image viewer/comic
+book reader with both vim and emacs keybindings.
 
-I have pretentions of using sdl to be crossplatform and mayby one day having a web interface.
+I have pretentions of using sdl to be
+crossplatform and maybe one day having a web
+interface.
 
 ####progress
 (+-todo,.-done)
