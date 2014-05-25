@@ -22,7 +22,7 @@ I have pretentions of using sdl to be crossplatform and mayby one day having a w
       - vim+
       - emacs+
   - open files+
-      - cbr
+      - cbr+
       - cbt+
       - cbz+
       - zen+
