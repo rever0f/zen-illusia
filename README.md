@@ -11,8 +11,8 @@ interface.
 (+-todo,.-done)
 
   - read images+
-      - jpg+
-      - png+
+      - jpg.
+      - png.
       - bmp+
       - gif+
       - animated gif+

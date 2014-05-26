@@ -1,8 +1,22 @@
 ;; zi-node.cl
 ;; zen-illusia controller
 ;; 2014 0525
+(load "ammo.cl")
+(defvar *imcur* nil "current image")
+
+(load "zi-sdl-node.cl")
+(load "zi-echo.cl")
+(load "zi-sdl-echo.cl")
+(load "zi-illumin.cl")
+(load "zi-sdl-illumin.cl")
+
+;; (defun go-main (&optional (path nil))
+;;   (setq *imcur* (if path (gimage path)
+;;                      nil))
+;;   (go-node))
 
 (defun hkey (akey)
+  "handle key input"
   (case akey
     (a (print "a"))
     (esc (end))

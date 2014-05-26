@@ -7,7 +7,7 @@
   (sdl:window 0 0 :title-caption
               "zen-illusia")
   (setf (sdl:frame-rate) 60))
-(defun c-illum ()
+(defun c-illum (image)
   "continue main display"
-  (sdl:draw-surface (sdl:load-image "~/zspect/4-1.png"))
+  (sdl:draw-surface image)
   (sdl:update-display))

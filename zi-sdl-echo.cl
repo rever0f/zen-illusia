@@ -5,7 +5,12 @@
   "sdl key map"
   (case akey
     (:sdl-key-escape 'esc)
-    (:sdl-key-j 'a)))
+    (:sdl-key-a 'a)
+    (:sdl-key-j 'j)))
     ;; (sdl:key= key :sdl-key-escape)
+
+(defun gimage (path)
+  "load image from pre-verified path"
+  (sdl:load-image path))
 
 
