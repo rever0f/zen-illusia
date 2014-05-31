@@ -2,6 +2,28 @@
 ;; zen-illusia controller
 ;; 2014 0525
 (load "ammo.cl")
+
+(defpackage :zen-illusia
+  (:use :cl))
+;;   (:shadowing-import-from 'iterate :terminate)
+;;   (:export :terminate))
+  ;; (:shadowing-import-from 'iterate :terminate :for :in :iter
+   ;; :next :with :generate :iterate :for))
+;; IN  ITERATE:IN
+;; ITER  ITERATE:ITER
+;; NEXT  ITERATE:NEXT
+;; WITH  ITERATE:WITH
+;; GENERATE  ITERATE:GENERATE
+;; ITERATE  ITERATE:ITERATE
+;; FOR  ITERATE:FOR
+;;   (:shadow #:iterator))
+
+;; (in-package :zen-illusia)
+
+;; (defun go-try ()
+;;   (iter (for i in '(a b c)) (princ i)))
+;; (import '(iterator) '#:zen-illusia)
+
 (defvar *imcur* nil "current image")
 
 (load "zi-sdl-node.cl")
@@ -16,10 +38,18 @@
 ;;   (go-node))
 
 (defun hkey (akey)
-  "handle key input"
+  "handle key input
+
+  param
+
+  a-a key name as symbol
+
+    -a-z
+    -escape, ctrl, shift
+    -write some more"
   (case akey
     (a (print "a"))
-    (esc (end))
+    (escape (end))
     (otherwise (princ (string akey)))))
     ;;   (:video-expose-event (sdl:update-display)))))
 
